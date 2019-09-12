@@ -1,0 +1,334 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body,html {
+	width: 100%;
+	height: 100%;
+	color: #1A1F1F;
+  position: relative;
+}
+	#loader {
+		  position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,1);
+    z-index: 100000000;
+    opacity: 1;
+    overflow: hidden;
+    text-align: center;
+	}
+
+		.spinner {
+
+	top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -150px;
+    position: absolute;
+    right: 0;
+    /* width: 100px;
+    height: 119px; */
+  width: 50px;
+  height: 60px;
+  text-align: center;
+  font-size: 10px;
+}
+ 
+.spinner > div {
+  background-color: #12FFFF;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+   
+  -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+  animation: stretchdelay 1.2s infinite ease-in-out;
+}
+ 
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+ 
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+ 
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+ 
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+ 
+@-webkit-keyframes stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) } 
+  20% { -webkit-transform: scaleY(1.0) }
+}
+ 
+@keyframes stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% {
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+@media (min-width: 768px){
+	.navbar-nav-right {
+	float: right;
+}
+}
+.navbar-inverse-c {
+	border: 0;
+	background-color: rgba(0,0,0,0);
+}
+.navbar-nav-right li {
+	padding: 0 10px;
+}
+.navbar-img {
+	float: left;
+	width: 70%;
+	/* width: 40px; */
+	/* height: 40px; */
+	/* border-radius: 50%; */
+}
+.navbar-brand-top {
+	/* padding: 8px 15px; */
+	height: 70px;
+	line-height: 70px;
+}
+.navbar-brand-top span {
+	/* padding-top: 6px;  */
+	line-height: 40px;
+	padding-left: 10px;
+}
+
+.container-top {
+	padding-top: 50px;
+}
+
+.backImg {
+	height: 100%;
+	width: 100%;
+	background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    display: block;
+}
+.container-img {
+	background-image: url('../img/bg.png');
+}
+.architecture-img {
+	background-image: url('../img/technology.png');
+}
+.rule-img {
+	background-image: url('../img/rule.png');
+}
+.navbar-example {
+	width: 100%;
+	background-image: url('../img/nav.png');
+	background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    display: block;
+	/* background-color: rgba(44,78,93,.8); */
+	transition: 0.5s ease-in-out;
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+}
+.navbar-inverse .navbar-nav>li>a {
+	color:#fff;
+	    line-height: 40px;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover  {
+	background-color: transparent;
+	color:#12FFFF;
+}
+
+section h1 {
+	color: #fff;
+	color: #fff;
+    margin: 5rem 0 3rem 0;
+    padding-top: 6rem;
+}
+section  .home-title {
+	    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 500px;
+    height: 400px;
+}
+ .home-title  .home-box-title{
+ 	    height: 250px;
+ }
+section  .home-title  img {
+	width: 30%;
+}
+section  .home-title  div {
+    background-color: rgba(15,63,73,.5);
+
+}
+section h2 {
+	padding-top: 120px;
+	margin-bottom: 8rem;
+	font-weight: 700;
+}
+section .technology-title{
+	color: #fff;
+}
+section button {
+	background-color: #00A0A4;
+	color:#fff;
+}
+
+section .technology h4,section .technology p {
+	color: #fff;
+}
+
+section h4 {
+	font-weight: 700;
+	margin: 3rem 0 1rem 0;
+}
+.rule-img h2, .rule-img h4, .rule-img p {
+	color: #fff;
+}
+
+.technology .col-sm-6,.col-xs-12{
+	    padding-right: 50px;
+    padding-left: 50px;
+}
+.technology  .row div {
+	/* margin-top: 5rem; */
+	margin-bottom: 6rem;
+}
+.pie-chart {
+	margin-top: 5rem;
+	margin-bottom: 6rem
+}
+.team {
+    margin-bottom: 5rem;
+}
+.team h5{
+	font-weight: 700;
+	line-height: 40px;
+}
+.team .card {
+	width: 18rem;
+	margin: 0 auto ;
+	margin-top: 3rem;
+}
+footer {
+	height: 60px;
+	background-color: #003435;
+	line-height: 60px;
+	color: #fff;
+}
+.row .main-box{
+	    margin-top: 4rem;
+    margin-bottom: 5rem;
+	/* border: 1px solid #eee; */
+    padding: 15px;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 15px #999;
+}
+.main-box .image-icon {
+	position: absolute;
+    top: -60px;
+    right: 10px;
+    width: 120px;
+}
+.backgd p {
+	    /* margin-top: 35px; */
+	line-height: 35px;
+}
+.backgd .backgd-box {
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+	border: 1px solid #eee;
+    box-shadow: 1px 1px 15px #ccc;
+}
+.backgd h3{
+	font-weight: 700;
+	margin: 40px 0 60px 0;
+}
+.backgd img {
+	margin-top: 60px;
+}
+.btn.focus, .btn:focus, .btn:hover {
+	color:#12FFFF;
+}
+@media (max-width: 760px) {
+	.backgd .backgd-box {
+		margin-top: 0px;
+	}
+	.pie-chart {
+	margin-top: 3rem;
+    margin-bottom: 3rem;
+	}
+	section .home-title {
+    width: 300px;
+    height: 225px;
+}	
+
+section h1 {
+	font-size: 25px;
+	line-height: 33px;
+	padding-top: 4.5rem;
+}
+section h2 {
+	padding-top: 80px;
+	margin-bottom: 0rem;
+	font-weight: 700;
+}
+ .home-title  .home-box-title{
+ 	    height: 200px;
+ }
+section .technology  {
+	color: #fff;
+}
+section .rule{
+	margin-top: 3rem;
+}
+/* .architecture-img {
+    height: 190%;
+    } */
+.technology .row div {
+    margin-top: 1.5rem;
+}
+.technology .col-sm-6,.col-xs-12{
+	    padding-right: 15px;
+    padding-left: 15px;
+}
+}
+.navbar-inverse .navbar-toggle {
+    border-color: transparent;
+        padding: 10px 10px;
+        margin-top: 18px;
+}
+.navbar-inverse .navbar-collapse {
+	border-color: rgba(18,255,255,.2);
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+	    background: -webkit-linear-gradient(#11d6cb, #003E42);
+    background: -o-linear-gradient(#11d6cb, #003E42);
+    background: -moz-linear-gradient(#11d6cb, #003E42);
+}
+}
+
+.animated5{
+	animation-duration: 2.5s;
+  animation-fill-mode: both;
+}
